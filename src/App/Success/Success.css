@@ -1,0 +1,46 @@
+.Success-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #202623;
+}
+.Success-icon {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.Success-title {
+  color: inherit;
+  font-size: 24px;
+  font-weight: 700;
+}
+.Success-text {
+  color: inherit;
+}
+.Success-button {
+  margin: 24px auto 0;
+  width: 100%;
+  min-width: 120px;
+  min-height: 30px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--borderRadius);
+  outline: none;
+  border: none;
+  background-color: coral;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s all;
+  text-decoration: none;
+}
+
+.Success-button:hover {
+  background-color: darkorange;
+}

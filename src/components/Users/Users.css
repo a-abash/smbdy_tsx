@@ -1,0 +1,10 @@
+.Users-root {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow: scroll;
+}
