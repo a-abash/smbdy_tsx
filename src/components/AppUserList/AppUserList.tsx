@@ -1,7 +1,6 @@
 import "./AppUserList.css";
 import { Users } from "../Users/Users";
 import { Search } from "../Search/Search";
-import { Loader } from "../Loader/Loader";
 import { Success } from "./Success/Success";
 import { useAppUserList } from "./useAppUserList";
 
@@ -16,15 +15,13 @@ export function AppUserList() {
     onClickInvite,
     onClickSendInvites,
   } = useAppUserList();
-  
+
   return (
     <div className="UsersList-root">
       <div className="UsersList-wrap">
         <Search searchValue={searchValue} handleChange={handleChange} />
 
-        {isLoading ? (
-          <Loader />
-        ) : isSuccess ? (
+        {isSuccess ? (
           <Success count={invites.length - 1} />
         ) : (
           <>
@@ -33,6 +30,7 @@ export function AppUserList() {
               searchValue={searchValue}
               invites={invites}
               onClickInvite={onClickInvite}
+              isLoading={isLoading}
             />
 
             {invites.length - 1 > 0 ? (

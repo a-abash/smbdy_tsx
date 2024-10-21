@@ -1,16 +1,22 @@
 import "./Users.css";
 import { UserBlock } from "./UserBlock/UserBlock";
 import { User } from "@/api/User";
+import { Loader } from "../Loader/Loader";
 
 type UsersProps = {
   users: User[];
   searchValue: string;
   invites: number[];
   onClickInvite: (id: number) => void;
+  isLoading: boolean;
 };
 
 export function Users(props: UsersProps) {
   const lowercaseSearchValue = props.searchValue.toLowerCase();
+
+  if (props.isLoading) {
+    return <Loader />;
+  }
 
   return (
     <ul className="Users-root">
