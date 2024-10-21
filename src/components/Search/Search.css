@@ -2,7 +2,7 @@
 .Search-wrap {
   margin: 0 auto;
   width: 100%;
-  height: 32px;
+  height: 40px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 .Search-input {
   padding: 0 8px 0 32px;
   width: 100%;
-  height: 32px;
+  height: 40px;
   font-size: 15px;
   border-radius: var(--borderRadius);
   outline: none;
@@ -23,5 +23,5 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: calc(32px / 5);
+  left: calc(40px / 5);
 }

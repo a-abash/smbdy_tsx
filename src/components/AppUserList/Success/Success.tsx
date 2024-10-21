@@ -1,18 +1,18 @@
-import { Icon } from "../../components/Icon/Icon";
+import { Icon } from "../../Icon/Icon";
 import "./Success.css";
 
 export function Success(props: { count: number }) {
-  const s = props.count > 1 ? "s" : "";
+  const plurals = props.count > 1 ? "s" : "";
   return (
     <div className="Success-root">
       <Icon className="Success-icon" iconName="deposit-status-done" size={72} />
       <h2 className="Success-title">Successful</h2>
       <p className="Success-text">
-        You have send invite{s} for <strong>{props.count}</strong> user{s}.
+        You have send invite for <strong>{props.count}</strong> user{plurals}.
       </p>
-      <a href="/" className="Success-button">
+      <button onClick={() => window.location.reload()} className="Success-button">
         Back
-      </a>
+      </button>
     </div>
   );
 }

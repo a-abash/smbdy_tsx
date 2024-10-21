@@ -1,4 +1,4 @@
-.App-root {
+.UsersList-root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,26 +9,26 @@
   color: #282c34;
 }
 
-.App-wrap {
-  padding: 32px 24px 24px;
+.UsersList-wrap {
+  padding: 40px 24px 24px;
   min-height: 300px;
   height: 460px;
   max-width: 300px;
   width: 100%;
   row-gap: 20px;
   display: grid;
-  grid-template-rows: 32px 1fr 42px;
+  grid-template-rows: 40px 1fr 40px;
   background-color: #d6d6d6;
   border-radius: var(--borderRadius);
   overflow: hidden;
 }
 
-.App-button {
+.UsersList-button {
   margin: 0 auto;
   width: 100%;
   min-width: 120px;
   min-height: 30px;
-  height: 42px;
+  height: 40px;
   display: block;
   border-radius: var(--borderRadius);
   outline: none;
@@ -42,6 +42,15 @@
   transition: .3s all;
 }
 
-.App-button:hover {
+.UsersList-button:hover {
   background-color: darkorange;
+}
+
+.UsersList-text {
+  margin-top: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: inherit;
+  text-align: center;
 }
