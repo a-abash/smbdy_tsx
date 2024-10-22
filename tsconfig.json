@@ -20,6 +20,8 @@
   },
   "include": [
     "src/**/*.ts",
+    "images.d.ts",
+    // "declarations.d.ts",
     "mui-theme.d.ts",
     "**/*.ts",
     "**/*.tsx"

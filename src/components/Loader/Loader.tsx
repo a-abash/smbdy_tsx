@@ -1,4 +1,4 @@
-import "./Loader.css";
+import "./Loader.scss";
 import { Icon } from "../Icon/Icon";
 
 export function Loader() {

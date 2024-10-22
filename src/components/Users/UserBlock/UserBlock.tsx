@@ -1,5 +1,5 @@
 import { User } from "@/api/User";
-import "./UserBlock.css";
+import "./UserBlock.scss";
 import { Icon } from "../../Icon/Icon";
 
 export function UserBlock(props: User) {

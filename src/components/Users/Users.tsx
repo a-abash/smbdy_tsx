@@ -1,4 +1,4 @@
-import "./Users.css";
+import "./Users.scss";
 import { UserBlock } from "./UserBlock/UserBlock";
 import { User } from "@/api/User";
 import { Loader } from "../Loader/Loader";

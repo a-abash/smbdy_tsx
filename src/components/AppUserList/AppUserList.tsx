@@ -1,4 +1,4 @@
-import "./AppUserList.css";
+import "./AppUserList.scss";
 import { Users } from "../Users/Users";
 import { Search } from "../Search/Search";
 import { Success } from "./Success/Success";

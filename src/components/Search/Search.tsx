@@ -1,5 +1,5 @@
 import { Icon } from "../Icon/Icon";
-import "./Search.css";
+import "./Search.scss";
 
 type SearchProps = {
   searchValue: string;
