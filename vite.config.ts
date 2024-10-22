@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true,  // відкривати браузер автоматично
-    hmr: true    // підтримка гарячого перезавантаження
+    hmr: true,    // підтримка гарячого перезавантаження
+    watch: {
+      usePolling: true,
+    }
   }
 });
